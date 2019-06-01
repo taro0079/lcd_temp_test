@@ -19,8 +19,8 @@ try:
     while True:
         result = instance.read()
         if result.is_valid():
-            display.lcd_display_string("Temperature:" + result.temperature,1)
-            display.lcd_display_string("Humidity:" + result.humidity, 2)
+            display.lcd_display_string("Temperature:" + str(result.temperature),1)
+            display.lcd_display_string("Humidity:" + str(result.humidity), 2)
 
 except KeyboardInterrupt:
     display.lcd_clear()
