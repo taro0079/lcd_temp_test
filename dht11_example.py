@@ -1,7 +1,3 @@
-import RPi.GPIO as GPIO
-import dht11
-import time
-import datetime
 
 # initialize GPIO
 GPIO.setwarnings(False)
